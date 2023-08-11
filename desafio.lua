@@ -53,8 +53,13 @@ local function getProgressBar( atributo)
     
 end
 
+local function view()
+    return print("=============================================")
+    
+end
+
 -- cartao
-print("=============================================")
+view()
 print("| ".. monsterName, emoji )
 print("| ".. description)
 print("| Atributos:")
@@ -64,4 +69,4 @@ print("| Life:        " .. getProgressBar(lifeAtribute))
 print("| Speed:       " .. getProgressBar(speedAtribute))
 print("| inteligence: " .. getProgressBar(inteligenceAtribute))
 print("| Utimate:     " .. getProgressBar(ultimateAtribute))
-print("=============================================")
+view()
